@@ -194,7 +194,7 @@ function createGoogleSearchTool(api: any) {
     name: TOOL_NAME,
     label: "Google Search",
     description:
-      "Search Google in the local browser (real session, logged-in cookies) and return the top organic results as structured JSON. Most human-like path; best for fresh/factual lookups. Result titles/snippets are wrapped as untrusted web content. Use a fetch/page-reading tool to open a result URL.",
+      "Web search via Google in the local browser (real logged-in session; most human-like, low bot-detection). Use this as the default discovery step for any web lookup: it returns the top organic results as structured JSON {title, url, snippet}. To read a result's full content, open its url with the browser tool. Titles and snippets are wrapped as untrusted external content.",
     parameters: {
       type: "object",
       additionalProperties: false,

@@ -1,0 +1,11 @@
+{
+  "name": "openclaw-plugin-google-search",
+  "version": "0.1.0",
+  "description": "Local Google search for OpenClaw via the real browser, returning compact structured results",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  }
+}

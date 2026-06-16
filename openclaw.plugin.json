@@ -1,0 +1,34 @@
+{
+  "id": "google-search",
+  "name": "Google Search",
+  "description": "Local Google search through the real browser; returns compact structured results.",
+  "enabledByDefault": false,
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": ["google_search"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "defaultLang": {
+        "type": "string",
+        "description": "Default Google interface language (hl), e.g. \"en\" or \"zh-CN\". Defaults to \"en\"."
+      },
+      "region": {
+        "type": "string",
+        "description": "Default Google region (gl), e.g. \"us\" or \"cn\". Optional."
+      },
+      "browserProfile": {
+        "type": "string",
+        "description": "OpenClaw browser profile to use. Defaults to the configured default profile."
+      },
+      "maxResultsCap": {
+        "type": "number",
+        "description": "Hard cap on results returned to the model (default 10)."
+      }
+    }
+  }
+}
